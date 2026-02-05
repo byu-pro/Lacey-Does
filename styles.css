@@ -87,6 +87,9 @@ img {
     pointer-events: none;
     z-index: 0;
     overflow: hidden;
+    /* Prevent shapes from causing horizontal scroll */
+    width: 100%;
+    max-width: 100vw;
 }
 
 .shape {
@@ -94,27 +97,29 @@ img {
     border-radius: 50%;
     filter: blur(100px);
     opacity: 0.35;
+    /* Contain shapes within viewport */
+    max-width: 100vw;
 }
 
 .shape-1 {
-    width: 700px;
-    height: 700px;
+    width: min(700px, 100vw);
+    height: min(700px, 100vw);
     background: var(--pink);
     top: -300px;
     right: -200px;
 }
 
 .shape-2 {
-    width: 600px;
-    height: 600px;
+    width: min(600px, 100vw);
+    height: min(600px, 100vw);
     background: var(--yellow);
     top: 40%;
     left: -300px;
 }
 
 .shape-3 {
-    width: 500px;
-    height: 500px;
+    width: min(500px, 100vw);
+    height: min(500px, 100vw);
     background: var(--light-blue);
     bottom: 5%;
     right: 5%;
@@ -1091,8 +1096,8 @@ p {
 }
 
 .shop-img-frame img {
-    width: 220px;
-    height: 300px;
+    width: min(220px, 70vw);
+    height: min(300px, 90vw);
     object-fit: cover;
 }
 
@@ -1440,7 +1445,7 @@ p {
     .hero-frame {
         width: 100%;
         height: 100%;
-        box-shadow: 15px 15px 0 var(--black);
+        box-shadow: 12px 12px 0 var(--black);
     }
 
     .hero-circle {
@@ -1556,14 +1561,14 @@ p {
     }
 
     .about-frame {
-        box-shadow: 12px 12px 0 var(--pink);
+        box-shadow: 10px 10px 0 var(--pink);
     }
 
     .about-accent-circle {
-        width: 100px;
-        height: 100px;
-        bottom: -25px;
-        right: -25px;
+        width: 80px;
+        height: 80px;
+        bottom: -15px;
+        right: 0;
     }
 
     .services-grid {
@@ -1571,7 +1576,7 @@ p {
     }
 
     .now-frame {
-        box-shadow: 12px 12px 0 var(--green);
+        box-shadow: 10px 10px 0 var(--green);
     }
 
     .now-frame img {
@@ -1580,6 +1585,15 @@ p {
 
     .shop-images {
         justify-content: center;
+    }
+
+    .shop-img-frame {
+        box-shadow: 10px 10px 0 var(--black);
+    }
+
+    /* Reset featured grid rows for tablet portrait */
+    .featured-grid {
+        grid-template-rows: auto;
     }
 
     .cta-card {
@@ -1645,29 +1659,33 @@ p {
 
     .hero-visual {
         min-height: 350px;
+        position: relative;
+        max-width: 100%;
+        padding: 10px;
     }
 
     .hero-frame {
         border-width: 4px;
-        box-shadow: 10px 10px 0 var(--black);
+        box-shadow: 8px 8px 0 var(--black);
         border-radius: 50% 50% 45% 55% / 50% 40% 60% 50%;
+        max-width: calc(100% - 16px);
     }
 
     .hero-circle {
-        width: 100px;
-        height: 100px;
-        left: 3%;
-        bottom: 0;
-        border-width: 4px;
-        box-shadow: 6px 6px 0 var(--hot-pink);
+        width: 90px;
+        height: 90px;
+        left: 5%;
+        bottom: 5%;
+        border-width: 3px;
+        box-shadow: 5px 5px 0 var(--hot-pink);
     }
 
     .frame-accent {
-        width: 80px;
-        height: 80px;
-        top: -10px;
-        right: -10px;
-        border-width: 3px;
+        width: 60px;
+        height: 60px;
+        top: 0;
+        right: 0;
+        border-width: 2px;
     }
 
     .floating-tag {
@@ -1681,16 +1699,23 @@ p {
 
     .about-frame {
         border-width: 4px;
-        box-shadow: 10px 10px 0 var(--pink);
+        box-shadow: 8px 8px 0 var(--pink);
         border-radius: 30% 70% 60% 40% / 40% 30% 70% 60%;
     }
 
     .about-accent-circle {
-        width: 80px;
-        height: 80px;
-        bottom: -20px;
-        right: -20px;
+        width: 60px;
+        height: 60px;
+        bottom: -10px;
+        right: 5px;
         border-width: 3px;
+    }
+
+    /* Contain the about image wrapper to prevent accent overflow */
+    .about-img-wrap {
+        position: relative;
+        overflow: visible;
+        max-width: calc(100% - 10px);
     }
 
     .about-text h2 {
@@ -1873,8 +1898,8 @@ p {
     }
 
     .shop-img-frame img {
-        width: 260px;
-        height: 320px;
+        width: min(260px, 80vw);
+        height: min(320px, 100vw);
     }
 
     .frame-1,
@@ -2071,8 +2096,20 @@ p {
     }
 
     .frame-accent {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        right: 0;
+    }
+
+    .hero-visual {
+        padding: 8px;
+        max-width: 100%;
+    }
+
+    .hero-frame {
+        max-width: calc(100% - 12px);
+        box-shadow: 6px 6px 0 var(--black);
     }
 
     /* About Small Mobile */
@@ -2086,6 +2123,17 @@ p {
 
     .about-img {
         height: 300px;
+    }
+
+    .about-accent-circle {
+        width: 50px;
+        height: 50px;
+        bottom: -5px;
+        right: 5px;
+    }
+
+    .about-img-wrap {
+        max-width: calc(100% - 5px);
     }
 
     .about-text h2 {
@@ -2227,8 +2275,8 @@ p {
     }
 
     .shop-img-frame img {
-        width: 220px;
-        height: 280px;
+        width: min(220px, 85vw);
+        height: min(280px, 110vw);
     }
 
     .shop-tag {
@@ -2329,13 +2377,155 @@ html,
 body {
     overflow-x: hidden;
     max-width: 100vw;
+    width: 100%;
 }
 
-* {
+/* Contain all elements */
+main,
+section,
+.container {
+    overflow-x: hidden;
     max-width: 100%;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* Prevent long words from causing overflow */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+blockquote,
+cite {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Ensure text wraps properly on mobile */
+@media (max-width: 768px) {
+
+    h1,
+    h2,
+    h3 {
+        hyphens: auto;
+        -webkit-hyphens: auto;
+    }
+
+    .hero-badge {
+        white-space: normal;
+        text-align: center;
+    }
+
+    .testimonial p {
+        word-break: break-word;
+    }
+
+    .press-logos span {
+        white-space: nowrap;
+    }
+}
+
+/* === TOUCH-FRIENDLY INTERACTIVE ELEMENTS === */
+@media (max-width: 768px) {
+
+    /* Ensure touch targets are at least 44px */
+    .btn,
+    .cta-btn,
+    button,
+    a {
+        min-height: 44px;
+    }
+
+    /* Reduce aggressive box-shadows that cause overflow */
+    .hero-frame {
+        box-shadow: 8px 8px 0 var(--black);
+    }
+
+    .about-frame {
+        box-shadow: 8px 8px 0 var(--pink);
+    }
+
+    .now-frame {
+        box-shadow: 8px 8px 0 var(--green);
+    }
+
+    .testimonial {
+        box-shadow: 6px 6px 0 var(--pink);
+    }
+
+    .cta-card:hover {
+        box-shadow: 10px 10px 0 var(--black);
+        transform: translateY(-5px);
+    }
+
+    .service-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 8px 8px 0 var(--black);
+    }
+
+    /* Prevent featured frame hover effects from causing overflow */
+    .featured-frame:hover {
+        transform: translateY(-4px);
+        box-shadow: 8px 8px 0 var(--purple);
+    }
+
+    /* Mural frame hover */
+    .mural-frame:hover {
+        transform: scale(1.01);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Even smaller shadows for small screens */
+    .hero-frame {
+        box-shadow: 6px 6px 0 var(--black);
+    }
+
+    .about-frame {
+        box-shadow: 6px 6px 0 var(--pink);
+    }
+
+    .now-frame {
+        box-shadow: 6px 6px 0 var(--green);
+    }
+
+    .testimonial {
+        box-shadow: 4px 4px 0 var(--pink);
+    }
+
+    .shop-img-frame {
+        box-shadow: 6px 6px 0 var(--black);
+    }
+
+    .cta-card:hover {
+        box-shadow: 8px 8px 0 var(--black);
+        transform: translateY(-3px);
+    }
+
+    .service-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 6px 6px 0 var(--black);
+    }
+
+    /* Disable aggressive hover effects on touch devices */
+    .featured-frame:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .mural-frame:hover {
+        transform: none;
+        box-shadow: none;
+    }
 }
