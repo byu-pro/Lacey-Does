@@ -2150,7 +2150,7 @@ p {
 
     /* Labels */
     .label {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
         padding: 0.4rem 1rem;
     }
 
@@ -2183,7 +2183,7 @@ p {
     }
 
     .mural-info span {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
 
     .mural-info h3 {
@@ -2231,7 +2231,7 @@ p {
     }
 
     .featured-tag {
-        font-size: 0.6rem;
+        font-size: 0.75rem;
         padding: 0.3rem 0.75rem;
     }
 
@@ -2280,7 +2280,7 @@ p {
     }
 
     .shop-tag {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
         padding: 0.4rem 0.75rem;
     }
 
