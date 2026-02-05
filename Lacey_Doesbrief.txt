@@ -1,0 +1,116 @@
+Design a stunning homepage for a Mural Artist
+Background information
+Organization name
+Lacey Does
+Description of the organization and its target audience
+Lacey Does is the personal brand website of Lacey Hennessey, a muralist, artist, designer, and creative collaborator.
+Murals are the primary focus, supported by design/licensing, brand collaborations, speaking, learning content, and a curated shop.
+Target audience:
+Cities, schools, hospitality groups (murals)
+Brands seeking collaborations or UGC
+Organizations booking speakers
+Fans and collectors (prints/products)
+Industry
+Art & Design
+Existing website
+https://www.laceydoes.com/
+Visual style
+Style/theme ideas
+The site should feel clean, bold, bright, and personality-forward. Lacey’s vibe is vibrant, loud, “maximalist”, and all about storytelling. Entertainment and education are the drivers, using social media as a portfolio platform to grow a community.
+Fonts:
+MAIN FONT: Awesome
+Use the italic version to emphasize certain words. There are many weights of this font, but always stick to using bold or regular.
+SUB-FONT: STEVIE SANS
+This can be used for subheadings or when a cleaner look is needed. Choose a weight that does not overpower the Awesome font.
+Colors:
+Primary Color
+Green - 899132
+Secondary Colors
+Pink - EDABDF
+Orange - E38953
+Yellow - EEC144
+Red - D73B33
+Black - 000000
+Purple - 5442AC
+Hot Pink - E143BB
+Light Blue - A8CAE8
+Design direction:
+Editorial and modern (not influencer-template)
+Murals visually prioritized
+Strong contrast (black accents, framing, line work)
+Organic shapes (circles) preferred over rigid grids
+Subtle texture/pattern as a nod to maximalism
+Motion used intentionally and sparingly
+Avoid:
+Cluttered layouts
+Flashy or gimmicky animation
+Long text tickers
+Tiny, hard-to-read image labels
+Content scrolling over hero images
+Inspirational websites
+https://www.ashleylongshore.com
+Bold black framing, confident layouts, personality in imagery
+https://jesseitzler.com
+Atmospheric video with text overlay; clear positioning (Do NOT copy the wordy ticker)
+https://www.evelynhenson.com
+Playful motion and custom pop-ups (Avoid hard-to-read image labels and flashing logos)
+https://coreypaigedesigns.com
+Clean homepage with video + snapshots (Avoid portfolio captions under every image)
+https://www.cristianoronaldo.com
+Strong homepage hero showing multiple facets clearly
+Content details
+Page descriptions
+Primary goal:
+Immediately show who Lacey is, what she does, and how to work with her.
+Murals should be unmistakably the priority.
+Required sections:
+Hero section with strong image/video and headline based on
+“Lacey Does: ___” (motion welcome, not required)
+Short personal snapshot (editorial, minimal text)
+Murals section (visually dominant)
+Visual grid showing:
+Murals
+Design & Licensing
+Collaborations
+Speaking
+Shop
+Featured work / proof (visual-first)
+“What Lacey’s Doing Now” (current focus)
+Shop / lifestyle callout (soft, curated)
+Speaking & collaborations CTA
+Press / social proof
+Final CTA
+Navigation (Must Be Reflected)
+Header Navigation:
+Home (Logo)
+About
+Portfolio
+Shop
+Learn
+Speaking
+Design
+Collabs
+Global CTA:
+Work With Me
+Footer:
+Press
+FAQ
+Social Icons
+What to avoid
+Avoid:
+Cluttered layouts
+Flashy or gimmicky animation
+Long text tickers
+Tiny, hard-to-read image labels
+Content scrolling over hero images
+Other
+Other notes
+This is a personal brand site, not a traditional portfolio
+Murals come first; everything else supports that
+Motion should feel smooth and editorial
+Repetition of “Lacey Does: ___” is intentional and encouraged
+The tone should feel human, confident, and collaborative
+Stock images
+Client allowed the use of stock for this contest.
+Contest deliverables
+1 x Web page design(s)
